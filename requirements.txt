@@ -1,6 +1,8 @@
 asgiref==3.5.2
 astroid==2.12.13
+black==22.10.0
 cfgv==3.3.1
+click==8.1.3
 dill==0.3.6
 distlib==0.3.6
 Django==3.2
@@ -9,7 +11,9 @@ identify==2.5.9
 isort==5.10.1
 lazy-object-proxy==1.8.0
 mccabe==0.7.0
+mypy-extensions==0.4.3
 nodeenv==1.7.0
+pathspec==0.10.2
 pep8==1.7.1
 platformdirs==2.5.4
 pre-commit==2.20.0
