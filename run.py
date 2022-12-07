@@ -1,1 +1,3 @@
-print("vladimir maciel")
+print(
+    "vladimir maciel",
+)
