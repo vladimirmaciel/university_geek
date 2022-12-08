@@ -1,3 +1,0 @@
-print(
-    "vladimir maciel",
-)
