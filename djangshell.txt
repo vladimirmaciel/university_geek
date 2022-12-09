@@ -1,0 +1,10 @@
+python manage.py 
+python manage.py shell
+from core.models import Produto
+dir(Produto)
+from core.views import index
+>>> produto = Produto("Atari 2000", 199.67, 100)
+>>> dir(produto)
+>>> produto = Produto(nome = "Atari 2000", preco=199.67, estoque=100)
+>>> produto.save()
+cliente.delete()
