@@ -1,8 +1,9 @@
 from django.urls import path
-from core import views
 
+from .views import contato, index, produto
 
 urlpatterns = [
-    path("", views.index, name='index'),
-    path("contato/", views.contato, name='contato'),
+    path("", index, name="index"),
+    path("contato", contato, name="contato"),
+    path("produto/<int:pk>", produto, name="produto"),
 ]

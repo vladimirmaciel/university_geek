@@ -1,15 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
+
 </head>
 <body>
-    <h1>Página Principal</h1>
-    <h2>{{outro}}</h2>
-    <h2>{{curso}}</h2>
-    <h2>{{logado}}</h2>
+    <center>
+    <h1>Index</h1>
+
+    <h2>{{ curso }}</h2>
+
+    <p>{{ outro }}</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for produto in produtos %}
+            <tr>
+                <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
+                <td>{{ produto.preco }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
 </body>
 </html>
