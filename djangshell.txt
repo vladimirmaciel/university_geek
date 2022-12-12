@@ -44,3 +44,13 @@ Atari 2000 100 199.67
 >>> produtos
 <QuerySet [<Produto: Allen 438 794.00>]>
 >>> 
+
+
+>>> from django1.settings import BASE_DIR
+>>> BASE_DIR
+
+
+>>> import os
+>>> STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+>>> STATIC_ROOT
+'/home/vladimir/cursos_2022/udemy/universtygeek/django1/staticfiles'

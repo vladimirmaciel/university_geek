@@ -3,11 +3,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
+    <title>Django1 - Index</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
     <center>
     <h1>Index</h1>
+    <img src="{% static 'images/logodjango.png' %}" alt="logodjango">
 
     <h2>{{ curso }}</h2>
 
@@ -29,6 +31,8 @@
         {% endfor %}
         </tbody>
     </table>
+    <button onclick='teste()'> Clique-me </button>
 
+    <script type="text/javascript" src="{% static 'js/scripts.js' %}"> ></script>
 </body>
 </html>
